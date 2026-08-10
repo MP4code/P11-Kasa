@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
-import About from "./pages/About";
+import AboutKasa from "./pages/AboutKASA";
 import Housing from "./pages/Housing";
 import Error from "./pages/Error";
 
@@ -12,11 +12,10 @@ function App() {
   return (
     <>
       <Header />
-
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<AboutKasa />} />
           <Route path="/housing/:id" element={<Housing />} />
           <Route path="*" element={<Error />} />
         </Routes>
