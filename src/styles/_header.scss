@@ -1,0 +1,33 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+    &_logo{
+        width: 145px;
+        height: auto;
+    }
+
+    &_nav{
+        display: flex;
+        gap: 20px;
+
+     ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        gap: 30px; 
+     }
+    }
+    
+    
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 5% 10% ;
+  }
+   
+}
