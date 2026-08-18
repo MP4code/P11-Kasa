@@ -1,6 +1,11 @@
+import HousingCard from "../components/HousingCard"
+
+
 const Home = () => {
   return (
-    <div>Home</div>
+  
+      <HousingCard />
+
   )
 }
 
