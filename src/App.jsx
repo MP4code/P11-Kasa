@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+/*import { Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -19,6 +19,26 @@ function App() {
           <Route path="/housing/:id" element={<Housing />} />
           <Route path="*" element={<Error />} />
         </Routes>
+      </main>
+
+      <Footer />
+    </>
+  );
+}
+
+export default App;*/
+import { Outlet } from "react-router-dom";
+
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+function App() {
+  return (
+    <>
+      <Header />
+
+      <main>
+        <Outlet />
       </main>
 
       <Footer />

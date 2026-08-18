@@ -1,5 +1,5 @@
 import KasaLogo from '../assets/images/KasaLogo.png'
-
+import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <header className='header'>
@@ -7,10 +7,10 @@ const Header = () => {
       <nav className='header_nav'>
         <ul>
           <li>
-            <a href="/">Accueil</a>
+            <Link to="/">Accueil</Link>
           </li>
           <li>
-            <a href="/about">A Propos</a>
+            <Link to="/about">A Propos</Link>
           </li>
         </ul>
       </nav>
@@ -18,4 +18,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Header;
