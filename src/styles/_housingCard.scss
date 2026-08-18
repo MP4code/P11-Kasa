@@ -3,11 +3,9 @@
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 30px;
-    justify-content: space-between;
 
 }
 
@@ -28,3 +26,12 @@
     display: flex;
     align-items: flex-end;
 }
+
+@media screen and (min-width: 768px) {
+  .housing {
+    grid-template-columns: repeat(3, 1fr);
+    background-color:#F6F6F6;
+    border-radius: 25px;
+    padding: 50px;
+  }
+  } 

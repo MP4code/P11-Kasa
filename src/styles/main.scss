@@ -2,6 +2,7 @@
 @use "./header";
 @use "./aboutKasa";
 @use "./ErrorPage";
+@use "./home";
 @use "./housingCard";
 
 * {
@@ -18,3 +19,11 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+@media screen and (min-width: 768px) {
+  main {
+    padding: 5% 10%;
+  }
+}
+
+  
