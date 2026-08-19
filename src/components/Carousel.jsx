@@ -28,12 +28,12 @@ const Carousel = (props) => {
         <img
           src={images[index]}
           alt="kasa photos logements"
-          className="carousel_img"
+          className="carousel_container_img"
         />
 
        { images.length > 1 && 
        <>
-       <div className="arrow">
+       <div className="carousel_container_arrow">
           <img
             src={ArrowBack}
             alt="flèche directionnelle gauche"
@@ -46,7 +46,7 @@ const Carousel = (props) => {
             onClick={increment}
           />
         </div>
-        <div className="Carousel_infoPics">
+        <div className="carousel_container_infoPics">
           <p>
             {index + 1}/{images.length}
           </p>

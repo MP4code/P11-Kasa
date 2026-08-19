@@ -19,13 +19,15 @@ const Housing = () => {
       <div className="housingInformation_content">
         <h1>{logement.title}</h1>
         <p>{logement.location}</p>
-       <div className="housingInformation_tags">
+       <div className="housingInformation_content_tags">
               {logement.tags.map((tag, i) => (
-                <p key={i}>{tag}</p>
+                <p className="housingInformation_content_tags_tag" key={i}>
+                  {tag}
+                </p>
               ))}
         </div>
         {/*rating*/}
-         <div className="housingInformation_host">
+         <div className="housingInformation_content_host">
               <div>
                 <p>{logement.host.name.split(" ")[0]}</p>
                 <p>{logement.host.name.split(" ")[1]}</p>
