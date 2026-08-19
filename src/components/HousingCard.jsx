@@ -8,7 +8,7 @@ const HousingCard = () => {
         <article key={housing.id} className="housing-card" style={{
                 backgroundImage:`url(${housing.cover})`,
               }}>
-          <Link className="card-link" to={`/logement/${housing.id}`} key={housing.id}> 
+          <Link className="card-link" to={`/housing/${housing.id}`} key={housing.id}> 
             <h2>{housing.title}</h2>
           </Link>
         </article>

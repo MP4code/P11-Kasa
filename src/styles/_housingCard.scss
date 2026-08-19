@@ -1,7 +1,7 @@
 
 .housing {
     width: 100%;
-    padding: 20px;
+    padding: 20px 0;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr;
@@ -22,6 +22,8 @@
     height: 340px;
     border-radius: 10px;
     padding: 0 20px 20px;
+    font-size: 18px;
+    font-weight: 700;
     color: white;
     display: flex;
     align-items: flex-end;
