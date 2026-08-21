@@ -1,5 +1,5 @@
-function banner(props) {
-    if (props.name === "home") {
+function banner({name}) {
+    if (name === "home") {
         return (
             <div className='bannerHome' >
                 <div className='bannerContainer'>
@@ -7,7 +7,7 @@ function banner(props) {
                 </div>
             </div>
         )
-    } else if (props.name === "about") {
+    } else {
         return (
             <div className='bannerAbout' >
                 <div className='bannerContainer'>

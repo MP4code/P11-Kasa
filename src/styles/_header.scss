@@ -20,14 +20,25 @@
         display: flex;
         gap: 30px; 
      }
-    }
-    
-    
+      
+    }    
 }
+.navlink{
+        text-decoration: none;
+      }
+    .active{
+        padding-bottom: 1px;
+        border-bottom: 1px solid black;
+      }
 
 @media screen and (min-width: 768px) {
   .header {
     padding: 5% 10% ;
+    
+    &_nav {
+    font-size: 24px;
+    }
   }
+  
    
 }

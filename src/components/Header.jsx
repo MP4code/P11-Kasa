@@ -1,6 +1,8 @@
 import KasaLogo from '../assets/images/KasaLogo.png'
-import { Link } from 'react-router-dom';
+import { NavLink, Link} from 'react-router-dom';
+
 const Header = () => {
+
   return (
     <header className='header'>
       <Link to="/">
@@ -9,10 +11,18 @@ const Header = () => {
       <nav className='header_nav'>
         <ul>
           <li>
-            <Link to="/">Accueil</Link>
+            <NavLink to="/" className={({ isActive }) =>
+          isActive ? "navLink active" : "navLink"
+        }>
+              Accueil
+            </NavLink>
           </li>
           <li>
-            <Link to="/about">A Propos</Link>
+            <NavLink to="/about" className={({ isActive }) =>
+          isActive ? "navLink active" : "navLink"
+        }>
+              A Propos
+            </NavLink>
           </li>
         </ul>
       </nav>

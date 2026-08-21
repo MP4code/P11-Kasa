@@ -1,6 +1,8 @@
 import { useNavigate, useParams } from "react-router-dom";
 import logementData from "../data/logements.json";
 import Carousel from "../components/Carousel";
+// import Rating from "../components/Rating";
+import Collapse from "../components/Collapse";
 
 const Housing = () => {
   const { id } = useParams();
@@ -26,7 +28,7 @@ const Housing = () => {
                 </p>
               ))}
         </div>
-        {/*rating*/}
+        {/*rating */}
          <div className="housingInformation_content_host">
               <div>
                 <p>{logement.host.name.split(" ")[0]}</p>
@@ -34,7 +36,7 @@ const Housing = () => {
               </div>
               <img src={logement.host.picture} alt="photo de profil"/>
           </div>
-        {/*Collapse*/}
+        <Collapse name="Housing" title={logement.title} content={logement.description} content2={logement.equipments} />
       </div>
     </section>
   );
